@@ -1,17 +1,78 @@
+/* BONUS SCHERMO MEDIO 768px */
+
+@media screen  and (max-width: 768px){
+
+  /* I comandi come quelli di * o .container.gray una volta inseriti qui possono essere tolti dal max-width 420 perchè vengono prima e vengono ereditati, ma essendo questo il bonus li lascio anche nel 420*/
+
+  *{ 
+    margin: 0;
+    padding: 0;
+  }
+
+  .row{
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+   width: calc( 50% - 20px);
+   margin: 5px;
+  }
+
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+   float: left;
+   width: calc(50% - 40px);
+   margin: 10px;
+ }
+
+ 
+ #steps .row>.left {
+   float: none;
+   width: 50%;
+   margin: auto;
+ }
+   
+
+ img{
+  height: 100px;
+ } 
+ 
+ #lezioni .row,
+ #why .row {
+    background-color: #f2d6cd;
+ }
+
+ .container.grey {
+   background-color: white;
+ }
+
+}
+
+/* FINE BONUS */
+
+/* INIZIO ESERCIZIO */
+
 @media screen  and (max-width: 420px){
   *{
     margin: 0;
     padding: 0;
   }
-   .row{
+
+  .row{
      margin-top: 0;
      padding-top: 5px;
      padding-bottom: 5px;
      width: 100%;
   }
 
-   #lezioni .row>.left,
-   #lezioni .row>.right {
+  #lezioni .row>.left,
+  #lezioni .row>.right {
    width: 95%;
    float: none;
    margin: auto;
@@ -20,45 +81,39 @@
   #lezioni .row,
   #why .row {
     background-color: #f2f2cd;
- }
+  }
 
- #steps .row>.left,
- #steps .row>.central,
- #steps .row>.right {
-  width: 95%;
-  float: none;
-  margin: auto;
-}
-
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 95%;
-  padding-top: 20px;
-  float: none;
-  margin: auto;
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 95%;
+    float: none;
+    margin: auto;
+  }
   
-}
-
-.container.grey {
-  background-color: white;
-}
-
-img{
-  height: 100px;
-}
-
-#why .row img {
-  height: 50px;
-  border-radius: 50%;
-  padding: 25px
-}
-
-hr{
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 95%;
+    padding-top: 20px;
+    float: none;
+    margin: auto;
+  }
   
+  .container.grey {
+    background-color: white;
+  }
   
-}
-
+  img{
+    height: 100px;
+  }
+  
+  #why .row img {
+    height: 50px;
+    border-radius: 50%;
+    padding: 25px
+  }
+ 
 
   
 }
